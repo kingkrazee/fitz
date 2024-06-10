@@ -1,0 +1,51 @@
+#logo{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.models1{
+    background-image: url(https://kingkrazee.github.io/eccomerce/images/streetwear.png);
+    background-repeat: no-repeat;
+    width: 1519.2px;
+    object-fit: cover;
+    background-size: cover;
+    height: 100vh;
+}
+.clothes1{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin-top: 1rem;
+    border-radius: 1rem;
+  }
+  .cards{
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  #navvy{
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    background: rgb(255,49,49);
+background: linear-gradient(286deg, rgba(255,49,49,1) 36%, rgba(15,198,224,1) 100%);
+  }
+  #linkz{
+    margin-top: 2rem;
+    font-size: 25px;
+    color: black;
+    
+  }
+  /* .button1 {
+    background-color: #e03516;
+    width: 90px;
+    height: 20px;
+    border-radius: 1rem;
+    color: #fff;
+    border: 2px solid #000; 
+  } */
+  .cards{
+    background: rgb(255,49,49);
+background: linear-gradient(286deg, rgba(255,49,49,1) 36%, rgba(15,198,224,1) 100%);
+  }
+  
