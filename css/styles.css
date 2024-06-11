@@ -44,8 +44,7 @@ background: linear-gradient(286deg, rgba(255,49,49,1) 36%, rgba(15,198,224,1) 10
     color: #fff;
     border: 2px solid #000; 
   } */
-  .cards{
+  #carouselExampleCaptions{
     background: rgb(255,49,49);
 background: linear-gradient(286deg, rgba(255,49,49,1) 36%, rgba(15,198,224,1) 100%);
   }
-  
