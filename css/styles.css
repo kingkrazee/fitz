@@ -27,8 +27,9 @@
     display: flex;
     justify-content: center;
     height: 140px;
-    background: rgb(255,49,49);
-background: linear-gradient(286deg, rgba(255,49,49,1) 36%, rgba(15,198,224,1) 100%);
+    background: rgb(167,167,167);
+background: linear-gradient(90deg, rgba(167,167,167,1) 0%, rgba(116,115,115,1) 50%, rgba(167,167,167,1) 100%);
+    
   }
   #linkz{
     margin-top: 2rem;
@@ -48,3 +49,26 @@ background: linear-gradient(286deg, rgba(255,49,49,1) 36%, rgba(15,198,224,1) 10
     background: rgb(255,49,49);
 background: linear-gradient(286deg, rgba(255,49,49,1) 36%, rgba(15,198,224,1) 100%);
   }
+  .aboutz{
+    background-image: url(https://kingkrazee.github.io/eccomerce/images/aboutBack.jpg);
+    background-repeat: no-repeat;
+    width: 1519.2px;
+    object-fit: cover;
+    background-size: cover;
+    height: 80vh;
+  }
+  
+  .aboutp{
+    max-width: 600px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional: for visual reference */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: for visual effect */
+    background-color: rgb(0,0,0,0.5);
+    color: white;
+    
+}
+.aboutt{
+  padding-top: 5rem;
+}
