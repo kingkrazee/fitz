@@ -4,7 +4,8 @@ let main = document.getElementById('thecart')
 let btn = document.querySelector('button')
     purchased.forEach(item => {
         main.innerHTML += `<tr>
-                    <td>${item.image}</td>
+                    <td><img src="${item.image}" alt="${item.name}"></td>
+                    <td${item.name}<td/>
                     <td>${item.price}</td>
                     </tr>
                             `;

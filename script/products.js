@@ -31,9 +31,14 @@
  let buyBtns = document.querySelectorAll('.buy');
  function addTocart(id){
     let [item] = items.filter(object => object.id === +id)
-    console.log(id);
-    buyItems.push(item);
-    localStorage.setItem('cart', JSON.stringify(buyItems));
+    let existingItemIndex = buyItems.findIndex(item => item.id === itemToAdd.id);
+    if (existingItemIndex !== -1){
+        buyItems[existingItemIndex].quantity++;
+    }else {
+        itemToAdd.quantity = 1;
+        buyItems.push(itemToAdd);
+    }
+    localStorage.setItem('cart', JSON.stringify(buyItems))
 
  }
  buyBtns.forEach(button =>{
