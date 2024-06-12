@@ -31,6 +31,7 @@
     justify-content: space-evenly;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    width: 1019.2px;
 
   }
   #card2{
@@ -41,6 +42,10 @@
     height: 100px;
     width: 250px;
   }
+  #kerry, #kerry2, #carouselExample{
+    width: 1019.2px;
+  }
+  
   #navvy{
     display: flex;
     justify-content: center;
@@ -68,8 +73,9 @@ background: linear-gradient(90deg, rgba(167,167,167,1) 0%, rgba(116,115,115,1) 5
     border: 2px solid #000; 
   } */
   #carouselExampleCaptions, #carouselExample{
-    background: rgb(207,207,207);
-background: linear-gradient(90deg, rgba(207,207,207,1) 0%, rgba(163,163,163,1) 50%, rgba(203,203,203,1) 100%);
+
+    width: 1019.2;
+
   }
   .aboutz{
     background-image: url(https://kingkrazee.github.io/eccomerce/images/aboutBack.jpg);
@@ -130,6 +136,60 @@ background: linear-gradient(90deg, rgba(207,207,207,1) 0%, rgba(163,163,163,1) 5
   color: white;
   background: linear-gradient(330deg, rgba(255,49,49,1) 0%, rgba(255,145,77,1) 100%);
 } */
+ .demsuits{
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  /* border-radius: 2rem; */
+ }
+ #col1{
+  width: 500px;
+ }
+#col2{
+  width: 1019.2px;
+  padding-top: 6rem;
+}
+.row{
+  width: 1519.2px;
+  
+}
+body{
+  background: rgb(167,167,167);
+    background: linear-gradient(90deg, rgba(167,167,167,1) 0%, rgba(116,115,115,1) 50%, rgba(167,167,167,1) 100%);
+}
+
+
+.arrivs-container{
+  position: relative;
+  height: 60px;
+  overflow: hidden; 
+  background-color: black;
+  color: white;
+  font-family: "Jacquard 12", system-ui;
+      font-weight: 400;
+      font-style: normal;
+}
+
+.newarrivs {
+  padding: 10px 16px;
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  white-space: nowrap;
+  animation: marquee 15s linear infinite; 
+  
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 .gify{
   background-image: url(https://kingkrazee.github.io/eccomerce/images/aboutgif.gif);
@@ -152,3 +212,4 @@ background: linear-gradient(90deg, rgba(207,207,207,1) 0%, rgba(163,163,163,1) 5
 /* #feet{
   margin-top: 5rem;
 } */
+

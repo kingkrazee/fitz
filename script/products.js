@@ -42,6 +42,17 @@ let containerHTML = `
 
 // Append the container HTML to the main element
 main.innerHTML = containerHTML;
+ localStorage.setItem('items',JSON.stringify('items'));
+ items.forEach(item => {
+    main.innerHTML += `
+    <div>
+    <img src="${item.image}">
+    <p>R${item.price}</p>
+    <button id="View">View More</button>
+    <button class="buy" value=${item.id}>Purchase</button>
+    </d>`
+ });
+
  let buyItems = JSON.parse(localStorage.getItem('cart'))||[];
  let buyBtns = document.querySelectorAll('.buy');
  function addTocart(id){
@@ -61,3 +72,5 @@ main.innerHTML = containerHTML;
         addTocart(event.target.value);
     })
  })
+
+
