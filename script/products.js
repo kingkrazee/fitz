@@ -24,13 +24,14 @@
     <img src="${item.image}">
     <p>R${item.price}</p>
     <button id="View">View More</button>
-    <button class"buy" value=${item.id}">Purchase</button>
+    <button class="buy" value=${item.id}>Purchase</button>
     </d>`
  });
- let buyItems = []
+ let buyItems = JSON.parse(localStorage.getItem('cart'))||[];
  let buyBtns = document.querySelectorAll('.buy');
  function addTocart(id){
     let [item] = items.filter(object => object.id === +id)
+    console.log(id);
     buyItems.push(item);
     localStorage.setItem('cart', JSON.stringify(buyItems));
 
@@ -41,5 +42,4 @@
     })
  })
 
- displayItems(items);
 
