@@ -65,7 +65,9 @@ background: linear-gradient(90deg, rgba(167,167,167,1) 0%, rgba(116,115,115,1) 5
     border: 2px solid #000; 
   } */
   #carouselExampleCaptions, #carouselExample{
+
     width: 1019.2;
+
   }
   .aboutz{
     background-image: url(https://kingkrazee.github.io/eccomerce/images/aboutBack.jpg);
@@ -87,9 +89,29 @@ background: linear-gradient(90deg, rgba(167,167,167,1) 0%, rgba(116,115,115,1) 5
     color: white;
     
 }
-.aboutt{
+  .abouto{
+    max-width: 600px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional: for visual reference */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: for visual effect */
+    background-color: rgb(0,0,0,0.5);
+    color: white;
+
+    
+}
+
+.aboutt, .aboutl{
   padding-top: 5rem;
 }
+/* .abouto{
+  background-image:
+    linear-gradient(black, black),
+    url(https://kingkrazee.github.io/eccomerce/images/aboutgif.gif);
+  background-size: cover;
+  background-blend-mode: saturation;
+} */
 /* .indi{
   background: black;
 } */
@@ -128,6 +150,7 @@ body{
     background: linear-gradient(90deg, rgba(167,167,167,1) 0%, rgba(116,115,115,1) 50%, rgba(167,167,167,1) 100%);
 }
 
+
 .arrivs-container{
   position: relative;
   height: 60px;
@@ -159,3 +182,26 @@ body{
     transform: translateX(-100%);
   }
 }
+
+.gify{
+  background-image: url(https://kingkrazee.github.io/eccomerce/images/aboutgif.gif);
+  background-size: cover;
+  /* width: 1519.2px; */
+  height: 80vh;
+  background-repeat: no-repeat;
+  /* filter: brightness(0.5); */
+}
+.social-icons{
+  display: flex;
+  justify-content: space-around;
+  background: rgb(167,167,167);
+    background: linear-gradient(90deg, rgba(167,167,167,1) 0%, rgba(116,115,115,1) 50%, rgba(167,167,167,1) 100%);
+  /* opacity: 0.5; */
+}
+.social-icons i{
+  font-size: 40px;
+}
+/* #feet{
+  margin-top: 5rem;
+} */
+
