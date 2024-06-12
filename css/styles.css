@@ -128,7 +128,7 @@ body{
     background: linear-gradient(90deg, rgba(167,167,167,1) 0%, rgba(116,115,115,1) 50%, rgba(167,167,167,1) 100%);
 }
 
-.arrivs-container {
+.arrivs-container{
   position: relative;
   height: 60px;
   overflow: hidden; 
