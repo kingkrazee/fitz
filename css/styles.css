@@ -1,3 +1,17 @@
+/* Default CSS */
+*,
+*::before,
+*::after{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
 #logo{
     width: 150px;
     height: 150px;
@@ -417,4 +431,43 @@ body{
   object-fit: cover;
   background-size: cover;
   height: 80vh;
+} 
+.table img{
+  width: 100px;
+  height: 100px;
+}
+
+.addie{
+  width: 250px;
+  margin-left: 33rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  /* background: white; */
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+.table{
+  width: 1000px;
+  height: 500px;
+  margin-left: 10rem;
+}
+/* #kuller{
+  background-color: #0E0B3D;
+} */
+
+#tik{
+  margin-left: 10rem;
+}
+#admin-body{
+  background-image: url(https://kingkrazee.github.io/eccomerce/images/admin-back.jpg);
+  background-repeat: no-repeat;
+  width: 1519.2px;
+  object-fit: cover;
+  background-size: cover;
+  height: 130vh;
 }
