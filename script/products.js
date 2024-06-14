@@ -18,7 +18,7 @@
  let items = [item1, item2, item3, item4, item5, item6]
  let main = document.getElementById('boughting');
  let itemsHTML = items.map(item => `
-    <div class="col">
+    <div id= "pros1" class="col">
         <div class="card h-100">
             <img src="${item.image}" class="card-img-top" alt="...">
             <div class="card-body">
@@ -34,7 +34,7 @@
 // Construct the row and container HTML
 let containerHTML = `
     <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div id="pros2" class="row row-cols-1 row-cols-md-3 g-4">
             ${itemsHTML}
         </div>
     </div>
@@ -42,35 +42,6 @@ let containerHTML = `
 
 // Append the container HTML to the main element
 main.innerHTML = containerHTML;
- localStorage.setItem('items',JSON.stringify('items'));
- items.forEach(item => {
-    main.innerHTML += `
-    <div>
-    <img src="${item.image}">
-    <p>R${item.price}</p>
-    <button id="View">View More</button>
-    <button class="buy" value=${item.id}>Purchase</button>
-    </d>`
- });
 
- let buyItems = JSON.parse(localStorage.getItem('cart'))||[];
- let buyBtns = document.querySelectorAll('.buy');
- function addTocart(id){
-    let [item] = items.filter(object => object.id === +id)
-    let existingItemIndex = buyItems.findIndex(item => item.id === itemToAdd.id);
-    if (existingItemIndex !== -1){
-        buyItems[existingItemIndex].quantity++;
-    }else {
-        itemToAdd.quantity = 1;
-        buyItems.push(itemToAdd);
-    }
-    localStorage.setItem('cart', JSON.stringify(buyItems))
-
- }
- buyBtns.forEach(button =>{
-    button.addEventListener('click',(event)=>{
-        addTocart(event.target.value);
-    })
- })
 
 
