@@ -464,6 +464,7 @@ body{
   margin-left: 10rem;
 }
 #admin-body{
+  position: absolute;
   background-image: url(https://kingkrazee.github.io/eccomerce/images/admin-back.jpg);
   background-repeat: no-repeat;
   width: 1519.2px;
