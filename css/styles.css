@@ -209,7 +209,7 @@ body{
   background-image: url(https://kingkrazee.github.io/eccomerce/images/aboutgif.gif);
   background-size: cover;
   /* width: 1519.2px; */
-  height: 80vh;
+  height: 120vh;
   background-repeat: no-repeat;
   /* filter: brightness(0.5); */
 }
@@ -223,6 +223,26 @@ body{
 .social-icons i{
   font-size: 40px;
 }
+.about2{
+  text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional: for visual reference */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: for visual effect */
+    background-color: rgb(0,0,0,0.5);
+    color: white;
+    width: 500px;
+    margin-left: 32rem;
+}
+.me{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.row{
+  padding-top: 5rem;
+}
+
 /* #feet{
   margin-top: 5rem;
 } */
@@ -230,7 +250,7 @@ body{
 /* #pros1{
   padding-right: 10rem;
 } */
-#pros2{
+.pros{
    width: 1000px;
    height: 1000px;
 }
@@ -472,3 +492,4 @@ body{
   background-size: cover;
   height: 130vh;
 }
+
