@@ -16,7 +16,7 @@
     width: 150px;
     height: 150px;
     object-fit: cover;
-    
+    margin-top: -1rem;
 }
 .navbar .nav-item:not(.navbar-brand):hover .nav-link {
   border-bottom: solid 2px white;
@@ -68,7 +68,7 @@
   
   #navvy{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 140px;
     background: rgb(167,167,167);
     background: linear-gradient(90deg, rgba(167,167,167,1) 0%, rgba(116,115,115,1) 50%, rgba(167,167,167,1) 100%);
@@ -113,9 +113,10 @@
     text-align: center;
     padding: 20px;
     border: 1px solid #ccc; /* Optional: for visual reference */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: for visual effect */
+    box-shadow:10px 10px 10px black; /* Optional: for visual effect */
     background-color: rgb(0,0,0,0.5);
     color: white;
+    border-radius: 2rem;
     
 }
   .abouto{
@@ -127,12 +128,14 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: for visual effect */
     background-color: rgb(0,0,0,0.5);
     color: white;
-
+    border-radius: 2rem;
+    box-shadow:10px 10px 10px black;
     
 }
 
 .aboutt, .aboutl{
   padding-top: 5rem;
+  
 }
 /* .abouto{
   background-image:
@@ -191,6 +194,7 @@ body{
       font-style: normal;
 }
 
+/* This is Effects The New Arrivals Thingy  */
 .newarrivs {
   padding: 10px 16px;
   position: absolute;
@@ -198,16 +202,14 @@ body{
   left: 0;
   width: 100%; 
   white-space: nowrap;
-  animation: marquee 15s linear infinite; 
-  
+  animation: marquee 20s linear infinite; 
 }
 
-
 @keyframes marquee {
-  0% {
-    transform: translateX(100%);
+  0%, 100% {
+    transform: translateX(0%);
   }
-  100% {
+  50% {
     transform: translateX(-100%);
   }
 }
@@ -234,11 +236,14 @@ body{
   text-align: center;
     padding: 20px;
     border: 1px solid #ccc; /* Optional: for visual reference */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: for visual effect */
+    box-shadow:10px 10px 10px black; /* Optional: for visual effect */
     background-color: rgb(0,0,0,0.5);
     color: white;
     width: 500px;
     margin-left: 32rem;
+    border-radius:  2rem;
+    margin-top: -4rem;
+    margin-bottom: 2rem;
 }
 .me{
   width: 400px;
@@ -278,18 +283,18 @@ body{
 
   width: 400px;
 
-  /* NORMAL */
+  
   --fc-border-color: #ECEFF9;
   --fc-normal-text-color: #0E0B3D;
   --fc-normal-placeholder-color: #B3B8D0;
 
-  /* PRIMARY COLOR | HSL FORMAT*/
+  
   --fc-primary-color-hue: 220;
   --fc-error-color-hue: 356;
   --fc-primary-hsl: var(--fc-primary-color-hue), 100%, 54%;
   --fc-error-hsl: var(--fc-error-color-hue), 100%, 54%;
 
-  /* HOVER */
+  
   --fc-field-hover-bg-color: #F7F9FC;
   --fc-border-hover-color: #DDE0EE;
   --fc-field-hover-text-color: #B3B8D0;
@@ -310,9 +315,6 @@ body{
   margin-top: 16px;
 }
 
-/*=============================================
-=            Fields           =
-=============================================*/
 
 .formcarry-container input,
 .formcarry-container textarea,
@@ -457,7 +459,7 @@ body{
   width: 1519.2px;
   object-fit: cover;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
 } 
 .table img{
   width: 100px;
@@ -491,12 +493,186 @@ body{
   margin-left: 10rem;
 }
 #admin-body{
-  position: absolute;
+  margin-top: -3rem;
   background-image: url(https://kingkrazee.github.io/eccomerce/images/admin-back.jpg);
   background-repeat: no-repeat;
   width: 1519.2px;
   object-fit: cover;
   background-size: cover;
-  height: 130vh;
+  height: 150vh;
+}
+
+
+
+/* Cart Styling */
+
+.container {
+  padding: 20px;
+}
+
+.cart-item {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.cart-item img {
+  margin-right: 15px;
+  max-width: 100px;
+  height: auto;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.cart-summary {
+  background-color: #f8f9fa;
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+
+.card-deck {
+width: 20rem;
+height: 10rem;
+
+}
+
+footer{
+  text-align: center;
+}
+
+/* products */
+
+.card5 {
+  border: 1px solid #ddd;
+  border-radius: 8px; 
+  overflow: hidden; 
+  transition: transform 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff; 
+}
+
+.card5:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.card-img5 {
+  width: 100px; 
+  height: 100px; 
+  object-fit: cover; 
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body5 {
+  padding: 1rem;
+}
+
+.card-title5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text5 {
+  color: #555; 
+  margin-bottom: 0.5rem; 
+}
+
+.btnAddToCart {
+  background-color: #007bff;
+  color: #fff;
+  border: none; 
+  padding: 0.5rem 1rem; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.btnAddToCart:hover {
+  background-color: #0056b3; 
+}
+
+/* my cart */
+
+.checkoutImages {
+  max-width: 80px; 
+  height: auto;
+  border-radius: 8px; 
+}
+
+#total-container {
+  font-size: 1.2rem; 
+  font-weight: bold; 
+  margin-top: 1rem; 
+}
+
+table {
+  width: 100%; 
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd; 
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2; 
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+ 
+.prodii{
+  width: 800px;
+  margin-left: 22rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  /* background: white; */
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#theStore{
+  margin-top: -3rem;
+  background-image: url(https://kingkrazee.github.io/eccomerce/images/product-back.jpg);
+  background-repeat: no-repeat;
+  width: 1519.2px;
+  object-fit: cover;
+  background-size: cover;
+  height: 250vh;
 }
 
