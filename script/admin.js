@@ -8,13 +8,32 @@ function createItem(id, name, category, image, description, quantity, price){
     this.price = price;
  }
 
- const item1 = new createItem(1, 'Inferno', 'Hoodie','https://kingkrazee.github.io/eccomerce/images/hood.png','A bright red masterpiece only for comfort',1, 100.00);
- const item2 = new createItem(1, 'Abyss','Hoodie', 'https://kingkrazee.github.io/eccomerce/images/hoodies.png','So comfortable you will get lost in it',1, 100.00);
- const item3 = new createItem(1, 'Blank Space', 'Hoodies','https://kingkrazee.github.io/eccomerce/images/plain hood.jpg', 'Two wongs dont make a white, but we do and its comfy', 1, 100.00);
- const item4 = new createItem(1,'Klassik Mahn','Suits','https://kingkrazee.github.io/eccomerce/images/suit3.png','You can be me when you look this clean', 1, 1500.00);
- const item5 = new createItem(1,'Golden Hour','Suits','https://kingkrazee.github.io/eccomerce/images/suit5.webp','The perfect time to shine', 1, 1500.00);
- const item6 = new createItem(1, 'Flower Boy','Suits','https://kingkrazee.github.io/eccomerce/images/suit4.webp','I can buy myself flowers', 1, 1500.00);
- let items = [item1, item2, item3, item4, item5, item6]
+ const item1 = new createItem(1, 'Inferno', 'Hoodie','https://kingkrazee.github.io/eccomerce/images/hood.png','A bright red masterpiece only for comfort',1, 150.00);
+ const item2 = new createItem(1, 'Abyss','Hoodie', 'https://kingkrazee.github.io/eccomerce/images/hoodies.png','So comfortable you will get lost in it',1, 150.00);
+ const item3 = new createItem(1, 'Blank Space', 'Hoodies','https://kingkrazee.github.io/eccomerce/images/plain hood.jpg', 'Two wongs dont make a white, but we do and its comfy', 1, 150.00);
+ const item4 = new createItem(1,'Sandy','Hoodie','https://kingkrazee.github.io/eccomerce/images/hoodie5.webp','As Sandy as Delft', 1, 150.00);
+ const item5 = new createItem(1,'Blui','Hoodie','https://kingkrazee.github.io/eccomerce/images/hoodie4.png','Blue Skies', 1, 150.00);
+ const item6 = new createItem(1,'Klassik Mahn','Suits','https://kingkrazee.github.io/eccomerce/images/suit3.png','You can be me when you look this clean', 1, 1500.00);
+ const item7 = new createItem(1, 'Flower Boy','Suits','https://kingkrazee.github.io/eccomerce/images/suit4.webp','I can buy myself flowers', 1, 1500.00);
+ const item8 = new createItem(1, 'Greener','Suits','https://kingkrazee.github.io/eccomerce/images/suit4.webp','The Grass is Greener On The Otherside', 1, 1500.00);
+ const item9 = new createItem(1,'Golden Gates','Suits','https://kingkrazee.github.io/eccomerce/images/suit5.webp','The perfect time to shine', 1, 1500.00);
+ const item10 = new createItem(1, 'Sleak','Suits','https://kingkrazee.github.io/eccomerce/images/suit4.webp','Like Silk', 1, 1500.00);
+ const item11 = new createItem(1, 'Dicky','Sweat Pants','https://kingkrazee.github.io/eccomerce/images/sweats3.webp','I can buy myself flowers', 1, 120.00);
+ const item12 = new createItem(1, 'Eclipse','Sweat Pants','https://kingkrazee.github.io/eccomerce/images/sweats2.jpg','I can buy myself flowers', 1, 120.00);
+ const item13 = new createItem(1, 'Rooi','Sweat Pants','https://kingkrazee.github.io/eccomerce/images/sweats1.jpg','I can buy myself flowers', 1, 120.00);
+ const item14 = new createItem(1, 'Pinky','Sweat Pants','https://kingkrazee.github.io/eccomerce/images/sweats4.webp','I can buy myself flowers', 1, 120.00);
+ const item15 = new createItem(1, 'Army','Sweat Pants','https://kingkrazee.github.io/eccomerce/images/sweats5.webp','I can buy myself flowers', 1, 120.00);
+ const item16 = new createItem(1, 'Greenie','Crew Neck','https://kingkrazee.github.io/eccomerce/images/crew5.jpeg','I can buy myself flowers', 1, 100.00);
+ const item17 = new createItem(1, 'Ashy','Crew Neck','https://kingkrazee.github.io/eccomerce/images/crewneck2.png','I can buy myself flowers', 1, 100.00);
+ const item18 = new createItem(1, 'Darkseid','Crew Neck','https://kingkrazee.github.io/eccomerce/images/crewneck3.webp','I can buy myself flowers', 1, 100.00);
+ const item19 = new createItem(1, 'Beijing','Crew Neck','https://kingkrazee.github.io/eccomerce/images/crew4.jpg','I can buy myself flowers', 1, 100.00);
+ const item20 = new createItem(1, 'Vamp','Crew Neck','https://kingkrazee.github.io/eccomerce/images/crewneck1.jpg','I can buy myself flowers', 1, 100.00);
+ const item21 = new createItem(1, 'Ocean','Golfer','https://kingkrazee.github.io/eccomerce/images/golf1.jpg','I can buy myself flowers', 1, 80.00);
+ const item22 = new createItem(1, 'Lava','Golfer','https://kingkrazee.github.io/eccomerce/images/golf2.jpg','I can buy myself flowers', 1, 80.00);
+ const item23 = new createItem(1, 'Magenta','Golfer','https://kingkrazee.github.io/eccomerce/images/golf3.jpg','I can buy myself flowers', 1, 80.00);
+ const item24 = new createItem(1, 'Ice','Golfer','https://kingkrazee.github.io/eccomerce/images/golf4.jpg','I can buy myself flowers', 1, 80.00);
+
+ let items = [item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13, item14, item15, item16, item17, item18, item19, item20, item21, item22, item23, item24]
 
  function displayProducts() {
     let productsTableBody = document.getElementById('productsTableBody');

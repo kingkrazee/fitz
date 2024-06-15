@@ -499,7 +499,7 @@ body{
   width: 1519.2px;
   object-fit: cover;
   background-size: cover;
-  height: 150vh;
+  height: 450vh;
 }
 
 
@@ -674,5 +674,8 @@ tr:nth-child(even) {
   object-fit: cover;
   background-size: cover;
   height: 250vh;
+}
+#sorting{
+  color: white;
 }
 
