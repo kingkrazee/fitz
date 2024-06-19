@@ -679,3 +679,114 @@ tr:nth-child(even) {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .aboutz {
+    width: auto;
+  }
+  
+  .cards {
+    width: 695px;
+    padding-left: 5em;
+  }
+
+  .prada .row {
+    display: block;
+    width: auto;
+  }
+
+  #kerry, #kerry2, #carouselExample, #row2 {
+    width: auto;
+  }
+
+  #row2 {
+    display: block;
+    padding: 5rem;
+  }
+
+  .about2 {
+    margin-left: 8rem;
+  }
+
+  .col-md-8 {
+    width: auto !important;
+  }
+
+  #theStore, #theStore .row {
+    width: 100%;
+    height: auto;
+  }
+
+  .prodii {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .cont1 {
+    width: 100%;
+  }
+
+  .conth {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .table {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #admin-body {
+    width: 100%;
+  }
+
+  .addie {
+    margin: auto;
+  }
+
+  #tik {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    padding-left: 0;
+    width: 696px;
+  }
+
+  .demsuits {
+    width: 100%;
+  }
+
+  #row2 {
+    margin: 8rem 0;
+    padding: 0;
+  }
+
+  .about2 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .cards {
+    width: 900px;
+  }
+
+  .about2 {
+    width: auto;
+  }
+
+  .me {
+    width: auto;
+  }
+
+  #row2 {
+    margin-top: 28rem;
+  }
+
+  .formcarry-container {
+    width: 100%;
+    padding: 15px;
+  }
+}
