@@ -1,8 +1,8 @@
-// Getting cart items from localStorage
+
 let cart = JSON.parse(localStorage.getItem('checkout')) || [];
 let checkoutTable = document.querySelector('[table-checkout]');
 
-// Displaying cart items
+
 function cartItems() {
   if (cart.length === 0) {
       checkoutTable.innerHTML = "<tr><td colspan='6'>Add items to your cart</td></tr>"; // Message that displays if no items in cart
@@ -10,9 +10,9 @@ function cartItems() {
   }
 
   let tableContent = "";
-  let finalTotal = 0; // Initialize finalTotal
+  let finalTotal = 0; 
 
-  // Create a new array with unique products based on productName
+  
   let uniqueProducts = Array.from(new Set(cart.map(item => item.productName)))
       .map(productName => {
           return cart.find(item => item.productName === productName);
@@ -35,26 +35,26 @@ function cartItems() {
           </tr>`;
   });
 
-  // Display amount due
+ 
   const headingElement = document.querySelector('#total-container');
   headingElement.textContent = `Amount Due: R${finalTotal.toFixed(2)}`;
   checkoutTable.innerHTML = tableContent;
 
-  // Purchase button
+  
   document.querySelector('[purchase]').addEventListener('click', () => {
       alert("Thank you for purchasing");
   });
 
-  // Clear button
+  
   document.querySelector('[clear]').addEventListener('click', () => {
-      // Clear the cart and update local storage
-      cart = []; // Clear the cart
-      localStorage.setItem('checkout', JSON.stringify(cart)); // Update local storage
-      cartItems(); // Update the cart display
-      document.querySelector('#total-container').style.display = 'none'; // Hide the amount due
+      
+      cart = []; 
+      localStorage.setItem('checkout', JSON.stringify(cart)); 
+      cartItems(); 
+      document.querySelector('#total-container').style.display = 'none'; 
   });
 }
 
-// Call the cartItems function
+
 cartItems();
 
